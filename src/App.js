@@ -35,7 +35,7 @@ function App() {
       <Navbar searchText={searchText} setSearchText={setSearchText} />
       <Routes>
         <Route path="/" exact element={<Home />} />
-        <Route path="/movieBrowser" element={<GithubLander />} />
+        <Route path="/movieBrowser/" element={<GithubLander />} />
 
         <Route path="/about" element={<AboutView />} />
         <Route path="*" element={<PageNotFound />} />
