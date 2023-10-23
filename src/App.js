@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 import fetch from "node-fetch";
 import MovieView from "./components/MovieView";
 import PageNotFound from "./components/NotFound";
+import GithubLander from "./components/GithubLander";
 
 function App() {
 
@@ -34,7 +35,7 @@ function App() {
       <Navbar searchText={searchText} setSearchText={setSearchText} />
       <Routes>
         <Route path="/" exact element={<Home />} />
-        <Route path="/movieBrowser" element={<Home />} />
+        <Route path="/movieBrowser" element={<GithubLander />} />
 
         <Route path="/about" element={<AboutView />} />
         <Route path="*" element={<PageNotFound />} />
